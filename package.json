@@ -1,25 +1,38 @@
 {
     "name": "vscode-smallbasic",
-    "displayName": "vscode-smallbasic",
-    "description": "Small Basic language support for VS Code",
+    "displayName": "Small Basic",
+    "description": "Support for Microsoft's Small Basic in VS Code",
     "version": "0.0.1",
+    "publisher": "alxnull",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alxnull/vscode-smallbasic"
+    },
+    "icon": "assets/icon.png",
     "engines": {
-        "vscode": "^1.56.0"
+        "vscode": "^1.54.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
     "contributes": {
         "languages": [{
             "id": "smallbasic",
             "aliases": ["Small Basic", "smallbasic"],
-            "extensions": [".sb"],
+            "extensions": [".sb", ".smallbasic"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
             "language": "smallbasic",
             "scopeName": "source.smallbasic",
             "path": "./syntaxes/smallbasic.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "smallbasic",
+                "path": "./snippets/smallbasic.snippets.json"
+            }
+        ]
     }
 }

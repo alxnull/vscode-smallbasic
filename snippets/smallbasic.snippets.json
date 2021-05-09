@@ -1,0 +1,49 @@
+{
+	"For loop": {
+		"prefix": "for",
+		"body": [
+			"For ${1:index} = ${2:lower} To ${3:upper} Step ${4:stepsize}",
+			"\t$0",
+			"EndFor"
+		],
+		"description": "For loop"
+	},
+    "If statement": {
+        "prefix": "if",
+        "body": [
+            "If ${1:condition} Then",
+            "\t$0",
+            "EndIf"
+        ],
+        "description": "If statement"
+    },
+    "If-Else statement": {
+        "prefix": "if-else",
+        "body": [
+            "If ${1:condition} Then",
+            "\t$2",
+            "Else",
+            "\t$3",
+            "EndIf"
+        ],
+        "description": "If-Else statement"
+    },
+	"Subroutine": {
+		"prefix": "sub",
+		"body": [
+			"Sub ${1:name}",
+			"\t$0",
+			"EndSub"
+		],
+		"description": "Subroutine"
+	},
+	"While loop": {
+		"prefix": "while",
+		"body": [
+			"While ${1:condition}",
+			"\t$0",
+			"EndWhile"
+		],
+		"description": "While loop"
+	}
+}
