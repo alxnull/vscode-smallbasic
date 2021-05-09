@@ -1,0 +1,25 @@
+{
+    "name": "vscode-smallbasic",
+    "displayName": "vscode-smallbasic",
+    "description": "Small Basic language support for VS Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "smallbasic",
+            "aliases": ["Small Basic", "smallbasic"],
+            "extensions": [".sb"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "smallbasic",
+            "scopeName": "source.smallbasic",
+            "path": "./syntaxes/smallbasic.tmLanguage.json"
+        }]
+    }
+}
